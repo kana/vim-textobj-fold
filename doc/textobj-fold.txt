@@ -1,6 +1,6 @@
 *textobj-fold.txt*	Text objects for foldings
 
-Version 0.1.2
+Version 0.1.3
 Script ID: 2275
 Copyright (C) 2008 kana <http://whileimautomaton.net/>
 License: MIT license  {{{
@@ -127,6 +127,8 @@ CHANGELOG					*textobj-fold-changelog*
 
 0.1.3	2009-05-23T01:35:07+09:00		*textobj-fold-changelog-0.1.3*
 	- Fix a typo.
+	- Refine the document a bit.
+	- Refine the internal structure a bit.
 
 0.1.2	2008-08-25T00:53:18+09:00		*textobj-fold-changelog-0.1.2*
 	- Use textobj-user 0.3.5 or later.
