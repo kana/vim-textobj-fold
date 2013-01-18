@@ -1,5 +1,5 @@
 " textobj-fold - Text objects for foldings
-" Version: 0.1.3
+" Version: 0.1.4
 " Copyright (C) 2008-2013 Kana Natsuno <http://whileimautomaton.net/>
 " License: So-called MIT license  {{{
 "     Permission is hereby granted, free of charge, to any person obtaining

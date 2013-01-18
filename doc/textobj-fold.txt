@@ -1,6 +1,6 @@
 *textobj-fold.txt*	Text objects for foldings
 
-Version 0.1.3
+Version 0.1.4
 Script ID: 2275
 Copyright (C) 2008-2013 Kana Natsuno <http://whileimautomaton.net/>
 License: So-called MIT license  {{{
