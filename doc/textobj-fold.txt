@@ -1,9 +1,9 @@
 *textobj-fold.txt*	Text objects for foldings
 
-Version 0.1.3
+Version 0.1.4
 Script ID: 2275
-Copyright (C) 2008 kana <http://whileimautomaton.net/>
-License: MIT license  {{{
+Copyright (C) 2008-2013 Kana Natsuno <http://whileimautomaton.net/>
+License: So-called MIT license  {{{
     Permission is hereby granted, free of charge, to any person obtaining
     a copy of this software and associated documentation files (the
     "Software"), to deal in the Software without restriction, including
@@ -46,11 +46,14 @@ Requirements:
 - Vim 7.0 or later
 - |textobj-user| 0.3.5 or later (vimscript#2100)
 
+Installation:
+- Recommended way: Use vim-flavor <https://github.com/kana/vim-flavor>.
+
 Latest version:
-http://github.com/kana/config/commits/vim-textobj-fold
+https://github.com/kana/vim-textobj-fold
 
 Document in HTML format:
-http://kana.github.com/config/vim/textobj-fold.html
+http://vim-doc.heroku.com/view?https://github.com/kana/vim-textobj-fold/blob/master/doc/textobj-fold.txt
 
 
 
@@ -124,6 +127,10 @@ BUGS						*textobj-fold-bugs*
 
 ==============================================================================
 CHANGELOG					*textobj-fold-changelog*
+
+0.1.4	2013-01-06T15:15:27+09:00		*textobj-fold-changelog-0.1.4*
+	- Support vim-flavor <https://github.com/kana/vim-flavor>.
+	- Update |textobj-fold-introduction|.
 
 0.1.3	2009-05-23T01:35:07+09:00		*textobj-fold-changelog-0.1.3*
 	- Fix a typo.
