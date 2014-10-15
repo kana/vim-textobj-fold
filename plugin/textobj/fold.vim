@@ -67,12 +67,14 @@ endfunction
 
 function! s:select_i()
   call s:move_to_the_start_point()
+  normal! j
   let start_pos = getpos('.')
   for i in range(v:count1 - 1)
     call s:move_to_the_end_point('i', 0)
     normal! j
   endfor
   call s:move_to_the_end_point('i', 0)
+  normal! k
   let end_pos = getpos('.')
 
   return ['V', start_pos, end_pos]
