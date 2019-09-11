@@ -39,12 +39,20 @@ endfunction
 function! textobj#fold#select_i()
   call s:move_to_the_start_point()
   let start_pos = getpos('.')
+  if &foldmethod ==# 'marker'
+    " Next line
+    let start_pos[1] += 1
+  endif
   for i in range(v:count1 - 1)
     call s:move_to_the_end_point('i', 0)
     normal! j
   endfor
   call s:move_to_the_end_point('i', 0)
   let end_pos = getpos('.')
+  if &foldmethod ==# 'marker'
+    " Previous line
+    let end_pos[1] -= 1
+  endif
 
   return ['V', start_pos, end_pos]
 endfunction
