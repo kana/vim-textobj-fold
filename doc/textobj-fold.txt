@@ -72,6 +72,9 @@ KEY MAPPINGS					*textobj-fold-key-mappings*
 	Leading or trailing lines which are not in any foldings are also
 	counted too.
 
+	If the current |foldmethod| is "foldmarker", ignore the lines that
+	contain the marker.
+
 	Note that this object is linewise.  In Visual mode, the current
 	selection will be switched to linewise.  In Operator-pending mode,
 	affected text will be linewise.
@@ -104,9 +107,6 @@ BUGS						*textobj-fold-bugs*
 
 - Even if user explicitly specify a wise for an operator by |o_v| or others,
   |<Plug>(textobj-fold-a)| and |<Plug>(textobj-fold-i)| are always linewise.
-
-- |<Plug>(textobj-fold-a)| is not perfectly implemented.  Currently, it
-  behaves as same as |<Plug>(textobj-fold-i)|.
 
 - In Visual-mode, the current selection is overriden by new selection.
 
