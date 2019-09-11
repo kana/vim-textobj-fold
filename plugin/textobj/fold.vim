@@ -1,7 +1,7 @@
 " textobj-fold - Text objects for foldings
 " Version: 0.1.4
 " Copyright (C) 2008-2013 Kana Natsuno <http://whileimautomaton.net/>
-" License: So-called MIT license  {{{
+" License: MIT license  {{{
 "     Permission is hereby granted, free of charge, to any person obtaining
 "     a copy of this software and associated documentation files (the
 "     "Software"), to deal in the Software without restriction, including
@@ -21,44 +21,19 @@
 "     TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 "     SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 " }}}
-if exists('g:loaded_textobj_fold')  "{{{1
+
+if exists('g:loaded_textobj_fold')
   finish
 endif
 
-
-
-
-
-
-
-
-" Interface  "{{{1
-
 call textobj#user#plugin('fold', {
 \      '-': {
-\        '*sfile*': expand('<sfile>:p'),
 \        'select-a': 'az',  '*select-a-function*': 'textobj#fold#select_a',
 \        'select-i': 'iz',  '*select-i-function*': 'textobj#fold#select_i'
 \      }
 \    })
 
-
-
-
-
-
-
-
-" Fin.  "{{{1
-
 let g:loaded_textobj_fold = 1
-
-
-
-
-
-
-
 
 " __END__
 " vim: foldmethod=marker
